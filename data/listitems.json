@@ -1,0 +1,23 @@
+[
+  {
+    "title": "sed",
+    "owner": "placeimg.com",
+    "added": "15.01.2019",
+    "numOfTags": 9,
+    "src": "https://placeimg.com/100/100/city"
+  },
+  {
+    "title": "adispicing",
+    "owner": "placeimg.com",
+    "added": "29.01.2019",
+    "numOfTags": 0,
+    "src": "https://placeimg.com/200/150/music"
+  },
+  {
+    "title": "consectetur",
+    "owner": "placeimg.com",
+    "added": "06.02.2019",
+    "numOfTags": 2,
+    "src": "https://placeimg.com/150/200/culture"
+  }
+]
