@@ -15,28 +15,15 @@ class ViewController{
     toggleView(){
         this.toggleBtn
          = this.root.querySelector(".toggle-icon");
-        //  const listData = this.mainElement.getElementsByClassName('list-data');
-        //  console.log(listData)
         this.toggleBtn.addEventListener("click", () => {
             this.mainElement.classList.toggle("myapp-faded");
-            // for(let li of listData){
-            //     li.classList.toggle("list-data")
-            // }
             this.mainElement.ontransitionend = this.tansitionHandler
         })
     }
-    prepareFading(){
-        this.mainElement.classList.toggle("myapp-faded");
-        this.mainElement.ontransitionend = this.tansitionHandler
-        // const fadingSwitch = this.root.getElementsByClassName("imgbutton refresh-toogle")[0];
-        // fadingSwitch.addEventListener('click', () => {
-        //     this.mainElement.classList.toggle("myapp-faded");
-        //     // this.mainElement.addEventListener('transitionend', () => {
-        //     //     this.mainElement.classList.remove("myapp-faded");
-        //     // })
-        //     this.mainElement.ontransitionend = this.tansitionHandler
-        // })
-    }
+    // prepareFading(){
+    //     this.mainElement.classList.toggle("myapp-faded");
+    //     this.mainElement.ontransitionend = this.tansitionHandler
+    // }
     tansitionHandler = () => {
         this.mainElement.classList.toggle("myapp-faded");
         this.root.classList.toggle('myapp-tiles');
@@ -57,14 +44,6 @@ class ViewController{
             }
             alert('title: ' + title)
         }
-        // const liElements = this.mainElement.getElementsByTagName('li');
-        // for(let i = 0; i < liElements.length; i++){
-        //     let currentElement = liElements[i];
-        //     currentElement.onclick = (e) => {
-        //         const liElement = this.getEl(e.target);
-        //         console.log('title: ' + this.getListTitle(liElement));
-        //     }
-        // }
     }
     getEl(el){
         if(el instanceof HTMLLIElement){
@@ -110,7 +89,7 @@ class ViewController{
 
 
         ulElement.appendChild(newLi);
-        newLi.scrollIntoView();
+        newLi.scrollIntoView({behavior: "smooth"});
     }
 
     getDataFromServer(){

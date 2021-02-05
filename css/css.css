@@ -87,35 +87,29 @@ header h1 {
 }
 
 .listeners-active .toggle-listeners {
-  background-image: url("./img/glyphicons/png/glyphicons-560-mic-mute.png");
+  background-image: url("./img/glyphicons/svg/mic-mute.svg");
   background-size: 22px 22px;
-  /*float: left;*/
   justify-content: flex-start;
 }
 
 .toggle-listeners {
-  /* background-image: url("./img/glyphicons/png/glyphicons-301-microphone.png"); */
-  background-image: url("./img/glyphicons/png/glyphicons-517-menu-hamburger.png");
+  background-image: url("./img/glyphicons/svg/bars-solid.svg");
   background-size: 22px 22px;
-  /*float: left;*/
   justify-content: flex-start;
 }
 
 .new-item {
-  background-image: url("./img/glyphicons/png/glyphicons-433-plus.png");
-  /*float: right;*/
+  background-image: url("./img/glyphicons/svg/plus-solid.svg");
   justify-content: flex-end;
 }
 .toggle-icon {
-  background-image: url("./img/glyphicons/png/glyphicons-157-show-thumbnails.png");
-  /*float: right;*/
+  background-image: url("./img/glyphicons/svg/th-solid.svg");
   justify-content: flex-end;
   margin-left: auto;
 }
 
 .myapp-tiles .toggle-icon {
-  background-image: url("./img/glyphicons/png/glyphicons-115-list.png");
-  /*float: right;*/
+  background-image: url("./img/glyphicons/svg/elementor-brands.svg");
   justify-content: flex-end;
 }
 
@@ -130,9 +124,6 @@ main {
     100% - (var(--myapp-height-header)) - (var(--myapp-height-footer)) -
       (var(--myapp-border-header-footer) * 2)
   );
-  /* height: -webkit-calc(100% - 50px); */
-  /* max-height: calc(100% - 50px); */
-  /* max-height: -webkit-calc(100% - 50px); */
   overflow-y: auto;
   overflow-x: hidden;
   transition: opacity 1s;
@@ -160,9 +151,6 @@ main ul::before {
 
 li {
   height: 90px;
-  /* line-height: 90px; */
-  /* font-size: 14pt; */
-  /* padding-left: 10px; */
   border-bottom: 1px solid var(--myapp-color-separator);
 }
 .myapp-template {
@@ -186,11 +174,7 @@ main li img {
 }
 
 .edit-item {
-  /* margin-top: 15px;
-    margin-bottom: 15px; */
   margin-top: calc((var(--myapp-li-height) - var(--myapp-imgbutton-size)) / 2);
-  background-image: url("./img/glyphicons/png/glyphicons-31-pencil.png");
-  /*float: right;*/
   justify-content: flex-end;
   margin-left: auto;
 }
@@ -215,6 +199,9 @@ h3 {
   margin: 0;
   box-sizing: border-box;
 }
+.list-data-added {
+  padding-right: 10px;
+}
 .list-data-title {
   color: black;
   margin: 0.3rem 0;
@@ -225,7 +212,8 @@ h3 {
 }
 
 .list-data-play {
-  background-image: url("./img/glyphicons/png/glyphicons-174-play.png");
+  /* background-image: url("./img/glyphicons/png/glyphicons-174-play.png"); */
+  background-image: url("./img/glyphicons/svg/play-solid.svg");
   background-repeat: no-repeat;
   /* display: block; */
   filter: invert(60%);
@@ -257,13 +245,12 @@ h3 {
   -webkit-filter: invert(60%);
 }
 .list-data-menu {
-  background-image: url("./img/glyphicons/png/glyphicons-518-option-vertical.png");
+  background-image: url("./img/glyphicons/svg/ellipsis-v-solid.svg");
   background-repeat: no-repeat;
   filter: invert(60%);
   -webkit-filter: invert(60%);
   max-height: 100%;
   width: 10px;
-  z-index: 500;
 }
 
 /* tiles view*/
@@ -284,13 +271,7 @@ h3 {
           var(--myapp-space-default)
       ) / var(--myapp-num-of-tiles-in-row)
   );
-  /* width: calc(
-    (100vw - (100vw - 100%)) -
-      (
-        var(--myapp-scrollbar-width) + (var(--myapp-num-of-tiles-in-row) + 1) *
-          (var(--myapp-space-default))
-      ) / var(--myapp-num-of-tiles-in-row)
-  ); */
+
   height: calc(
     (
         100vw - (var(--myapp-num-of-tiles-in-row) + 1) *
@@ -311,27 +292,12 @@ h3 {
 }
 .myapp-tiles .list-data {
   display: inline-block;
-  /* height: 100%;
-  width: 100%;
-  margin: 0; */
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  /* height: 30px;
-  width: 30px; */
-  /* background-color: transparent; */
-  /* background-color: black; */
-  /* z-index: 100;
-  position: absolute;
-  left: 20;
-  top: 20; */
 }
 
 .myapp-tiles .list-data-menu {
   display: inline-block;
   height: 30px;
   width: 20px;
-  /* background-color: white; */
   z-index: 500!;
   position: absolute;
   bottom: 0;
@@ -345,36 +311,6 @@ h3 {
   opacity: 0.5;
 }
 
-/* selected elements */
-/* li:active,
-.imgbutton:active {
-  opacity: 0.1;
-} */
-
-/* toast */
-
-/* dialog.toast {
-  position: fixed;
-  width: 60%;
-  bottom: 15%;
-  left: 20%;
-  margin: 0px;
-  padding: 5px;
-  text-align: center;
-  opacity: 0;
-  color: white;
-  border: none;
-  transition: opacity 0.5s, background-color 0.5s;
-  transition-delay: 0.5s;
-}
-
-.toast.shown {
-  opacity: 1;
-  background-color: gray;
-  /*transition-delay: 0s;
-  transition: opacity 1s, background-color 1s;
-} */
-
 .myapp-faded {
   opacity: 0;
   transition: opacity 2s;
@@ -382,19 +318,18 @@ h3 {
 
 /*footer */
 footer {
-  /* height: calc(var(--myapp-height-footer) - var(--myapp-border-header-footer)); */
   height: var(--myapp-height-footer);
   background-color: white;
   border-top: var(--myapp-border-header-footer) solid rgb(255, 69, 0);
 }
 footer .refresh-toogle {
-  background-image: url("./img/glyphicons/png/glyphicons-82-refresh.png");
+  background-image: url("./img/glyphicons/svg/sync-solid.svg");
   justify-content: flex-end;
   margin-left: auto;
   background-size: 22px 22px;
 }
 footer .logout {
-  background-image: url("./img/glyphicons/png/glyphicons-388-log-out.png");
+  background-image: url("./img/glyphicons/svg/sign-out-alt-solid.svg");
   justify-content: flex-start;
   background-size: 22px 22px;
 }
