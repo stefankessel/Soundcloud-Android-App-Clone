@@ -2,4 +2,4 @@
 
 please use in mobile device mode to get right image sizing
 
-University Project: first project part of three for the class: Webapplications for Mobile Devices
+University Project: first part for a total of three projects for the university class: Web Applications for Mobile Devices
