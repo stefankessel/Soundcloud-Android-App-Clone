@@ -1,4 +1,4 @@
-# Soundcloud Android App clone
+# Soundcloud Android App Clone
 
 see: https://stefankessel.github.io/Soundcloud-Android-App-Clone/
 
